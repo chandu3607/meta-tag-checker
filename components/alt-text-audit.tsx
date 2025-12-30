@@ -103,7 +103,7 @@ export function AltTextAudit({ metaData }: AltTextAuditProps) {
                 <AlertTriangle className="w-4 h-4" />
                 {t("imagesMissingAltTitle")} ({imagesWithoutAltData.length})
               </h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-h-[500px] overflow-y-auto custom-scrollbar pr-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3 max-h-[200px] overflow-y-auto custom-scrollbar pr-2">
                 {imagesWithoutAltData.map((img, index) => (
                   <div
                     key={index}

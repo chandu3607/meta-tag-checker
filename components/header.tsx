@@ -50,7 +50,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-orange-400 via-orange-500 to-amber-500 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:rotate-3 hover:shadow-lg hover:shadow-orange-500/50">
-              <span className="text-lg font-bold text-white">{"</>"}</span>
+              <span className="text-lg font-bold text-white">{"#"}</span>
             </div>
             <div>
               <h1 className="text-xl font-bold text-white">MetaTagsChecker</h1>

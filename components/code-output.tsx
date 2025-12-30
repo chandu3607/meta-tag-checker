@@ -494,8 +494,8 @@ export function CodeOutput({ metaData }: CodeOutputProps) {
         </p>
       </div>
 
-      <div className="bg-[#0a0a0b] border border-[#21262d] rounded-lg p-4 overflow-x-auto hover:border-orange-500/20 transition-all duration-300 max-h-[500px] overflow-y-auto">
-        <pre className="text-sm text-gray-300 font-mono whitespace-pre-wrap">
+      <div className="bg-[#0a0a0b] border border-[#21262d] rounded-lg p-4 overflow-x-auto hover:border-orange-500/20 transition-all duration-300 max-h-[500px] overflow-y-auto custom-scrollbar">
+        <pre className="text-sm text-gray-300 font-mono whitespace-pre-wrap ">
           <code>{code}</code>
         </pre>
       </div>

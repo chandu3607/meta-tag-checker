@@ -18,7 +18,7 @@ export function HeadingStructure({ metaData }: HeadingStructureProps) {
     <div className="bg-[#111113] border border-[#1a1a1d] rounded-lg p-6 space-y-6 hover:border-orange-400/30 transition-all duration-300">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-semibold text-white flex items-center gap-2">
-          <Heading1 className="w-6 h-6 text-orange-400" />
+          {/* <Heading1 className="w-6 h-6 text-orange-400" /> */}
           {t("headingStructureTitle")}
         </h3>
         {hasHeadings && (
@@ -92,7 +92,7 @@ export function HeadingStructure({ metaData }: HeadingStructureProps) {
                 <p className="text-sm text-amber-300">{t("noH2Found")}</p>
               </div>
             ) : (
-              <div className="space-y-2 max-h-60 overflow-y-auto">
+              <div className="space-y-2 max-h-60 overflow-y-auto custom-scrollbar">
                 {headings.h2.map((heading, index) => (
                   <div
                     key={index}
@@ -116,7 +116,7 @@ export function HeadingStructure({ metaData }: HeadingStructureProps) {
             {headings.h3.length === 0 ? (
               <div className="text-sm text-gray-400 italic">{t("noH3Found")}</div>
             ) : (
-              <div className="space-y-2 max-h-60 overflow-y-auto">
+              <div className="space-y-2 max-h-60 overflow-y-auto custom-scrollbar">
                 {headings.h3.map((heading, index) => (
                   <div
                     key={index}

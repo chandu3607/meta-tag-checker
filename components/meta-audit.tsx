@@ -213,11 +213,11 @@ export function MetaAudit({ metaData }: MetaAuditProps) {
       {/* Issues List */}
       <div className="space-y-3">
         <h4 className="text-sm font-medium text-gray-400 uppercase tracking-wider">{t("auditIssuesFound")}</h4>
-        <div className="space-y-2 max-h-80 overflow-y-auto">
+        <div className="space-y-2 max-h-80 overflow-y-auto custom-scrollbar">
           {issues.map((issue, index) => (
             <div
               key={index}
-              className={`flex items-start gap-3 p-3 rounded-lg transition-all duration-200 hover:scale-[1.02] ${
+              className={`flex items-start gap-3 p-3 rounded-lg transition-all duration-200  ${
                 issue.type === "error"
                   ? "bg-red-400/5 border border-red-400/20 hover:border-red-400/40"
                   : issue.type === "warning"

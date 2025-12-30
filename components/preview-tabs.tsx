@@ -32,7 +32,7 @@ export function PreviewTabs({ metaData }: PreviewTabsProps) {
     { id: "facebook", label: t("facebook") },
     { id: "twitter", label: t("twitter") },
     { id: "linkedin", label: t("linkedin") },
-    { id: "slack", label: t("slack") },
+    // { id: "slack", label: t("slack") },
     { id: "whatsapp", label: "WhatsApp" },
   ]
 
@@ -74,7 +74,7 @@ export function PreviewTabs({ metaData }: PreviewTabsProps) {
         {activeTab === "facebook" && <FacebookPreview metaData={metaData} />}
         {activeTab === "twitter" && <TwitterPreview metaData={metaData} />}
         {activeTab === "linkedin" && <LinkedInPreview metaData={metaData} />}
-        {activeTab === "slack" && <SlackPreview metaData={metaData} />}
+        {/* {activeTab === "slack" && <SlackPreview metaData={metaData} />} */}
         {activeTab === "whatsapp" && <WhatsAppPreview metaData={metaData} />}
       </div>
     </div>
